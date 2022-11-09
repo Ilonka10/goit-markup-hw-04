@@ -314,6 +314,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 30px;
 }
 .socials-link {
   display: flex;
@@ -371,10 +372,11 @@ p {
 .clients-link:focus {
   background-color: var(--background-color);
 }
-.clients-foster:hover,
-.clients-foster:focus {
-  background-color: var(--secondary-border-color);
+.clients-icon:hover,
+.clients-icon:focus{
+  background-color: var(--main-title-color);
 }
+
 /* ------Foter------- */
 .footer {
   background-color: var(--primary-color);
