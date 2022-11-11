@@ -53,9 +53,10 @@ p {
   display: flex;
   align-items: center;
 }
-.logo-header {
-  margin-right: 93px;
+.logo {
+   margin-right: 93px;
 }
+
 .header-nav {
   margin-right: auto;
 }
@@ -314,7 +315,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 30px;
+
 }
 .socials-link {
   display: flex;
@@ -354,8 +355,10 @@ p {
   gap: 30px;
   padding-left: 0;
 }
+
 .clients-link {
-  padding: 16px 32px 16px 32px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -363,19 +366,32 @@ p {
   height: 92;
   border: 1px solid var(--secondary-border-color);
   border-radius: 4px;
-  background-color: var(--main-title-color);
+  color: var(--main-title-color);
 }
-.clients-icon {
-  fill: var(--secondary-border-color);
+
+.clients-item{
+  width: 170px;
+  height: 92px;
 }
+
+
 .clients-link:hover,
 .clients-link:focus {
-  background-color: var(--background-color);
+  border-color: var(--main-btn-color);
+  color: var(--main-btn-color);
 }
-.clients-icon:hover,
-.clients-icon:focus{
-  background-color: var(--main-title-color);
+
+.clients-icon{
+  fill: currentColor;
 }
+
+
+/* .clients-icon:hover .clients-link
+.clients-icon:focus .clients-link{
+  fill: var(--main-btn-color);
+} */
+
+
 
 /* ------Foter------- */
 .footer {
@@ -445,7 +461,7 @@ p {
 .footer-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -459,6 +475,9 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
+ margin-bottom: 0;
+  padding-left: 0;
+
 }
 .footer-clas {
   display: flex;
@@ -472,9 +491,7 @@ p {
 .socials-networks {
   fill: var(--main-title-color);
 }
-.twitter-element {
-  background-color: var(--background-color);
-}
+
 .footer-clas:hover,
 .footer-clas:focus {
   background-color: var(--background-color);
